@@ -49,6 +49,8 @@ st.code('import numpy as np, pandas as pd, ploty.express as px, streamlit as st,
 st.latex(r'Rumus regresi sederhana: Y = a + bX')
 st.markdown('contoh pengaturan tesk: **teks tebal** dan _teks miring_ serta [link](https://akmalllsaham01.streamlit.app/)')
 
+df = pd.read_csv('datasaham.csv')
+st.write(df)
 link = 'https://webapi.bps.go.id/v1/api/list/model/data/lang/ind/domain/0000/var/2266/key/[WebAPI_KEY]'
 response = requests.get(link)
 
