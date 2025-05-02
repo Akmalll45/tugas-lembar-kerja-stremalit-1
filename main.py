@@ -51,6 +51,7 @@ st.markdown('contoh pengaturan tesk: **teks tebal** dan _teks miring_ serta [lin
 
 df = pd.read_csv('datasaham.csv')
 st.write(df)
+
 link = 'https://webapi.bps.go.id/v1/api/list/model/data/lang/ind/domain/0000/var/2266/key/[WebAPI_KEY]'
 response = requests.get(link)
 
